@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <meta name="viewport" content="width-device-width, initial-scale=1.0">-->
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+<!--<div class="action-con">-->
+<!--    <div class="action">-->
+<!--        <div class="text">-->
+<!--            <h2 class="h2">Action</h2>-->
+<!--            <p class="p">Hurry up to order and get a promotional</p>-->
+<!--            <h3 class="h3">price of <span class="value-procent">20</span><span class="procent">%</span></h3>-->
+<!--        </div>-->
+<!--        <div class="timer">-->
+<!--            <div class="timer__items">-->
+<!--                <div class="timer__item timer__days">00</div>-->
+<!--                <div class="timer__item timer__hours">00</div>-->
+<!--                <div class="timer__item timer__minutes">00</div>-->
+<!--                <div class="timer__item timer__seconds">00</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="buy-btn">-->
+<!--            <a class="a-btn" href="#order">Order</a>-->
+<!--        </div>-->
+<!--    </div></div>-->
+<div class="block-logo">
+    <div class="logo">
+        <b><a class="logo-text"><span class="logo-P">VOLSTINY</span>PRODUCTION</a></b>
+    </div>
+    <div class="cont-lang">
+        <a class="lang" href="test2_home_uk.html"><span class="material-symbols-outlined" id="icon-lang">language</span></a>
+    </div>
+</div>
+{% block content %}{% endblock %}
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+<script src="libs/vanilla-tilt.js-master/dist/vanilla-tilt.js"></script>
+<script src="/static/js/script.js"></script>
+<script src="/static/js/index.js"></script>
+<script src="/static/js/timer.js"></script>
+<script src="/static/js/anchors.js"></script>
+<script src="/static/js/scroll_height_block.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        speed: 50
+    })
+</script>
+</body>
+</html>

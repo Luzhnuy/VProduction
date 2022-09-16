@@ -1,0 +1,234 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 100%;
+    min-height: 20vh;
+    position: relative;
+    background: linear-gradient(to right, #51ACC5, #2C5F78, #0E1E2B);
+}
+
+.container1 .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
+}
+
+.container1 .logo .logo-text {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 10px;
+    font-size: 35px;
+    color: white;
+}
+
+.lang {
+    color: white;
+}
+
+.container1 .cont-lang {
+    display: flex;
+    align-items: center;
+}
+
+.lang {
+    margin-right: 35px;
+}
+
+#icon-lang {
+    font-size: 35px;
+    color: #3E839E;
+    margin-right: 10px;
+    transition: 2s;
+}
+
+#icon-lang:hover {
+    font-size: px;
+}
+
+.controller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100%;
+    min-height: 80vh;
+    position: relative;
+    background: linear-gradient(to right, #51ACC5, #2C5F78, #0E1E2B);
+}
+
+.controller .center-text {
+    display: flex;
+}
+
+.center-text {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.logo-W {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+.text1 {
+    font-size: 25px;
+    color: black;
+    letter-spacing: 15px;
+    position: relative;
+    animation: text 3s 1;
+}
+
+.text2 {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 8px;
+    margin-top: 7px;
+    position: relative;
+    animation: text 3s 1;
+}
+
+.text3 {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    letter-spacing: 8px;
+    position: relative;
+    animation: text 3s 1;
+}
+
+.text3::after {
+    content: '';
+    display: inline-block;
+    width: 80%;
+    height: 5px;
+    background-image: linear-gradient(to right, #51ACC5, #2C5F78, #0E1E2B);
+
+}
+
+@keyframes text {
+    0% {
+        background-image: linear-gradient(to right, #51ACC5, #2C5F78, #0E1E2B);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50% {
+        letter-spacing: 25px;
+        background-image: linear-gradient(to right, #51ACC5, #2C5F78, #0E1E2B);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    85% {
+        letter-spacing: 15px;
+        background-image: linear-gradient(to right, #51ACC5, #2C5F78, #0E1E2B);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.controller .btn-control {
+    display: flex;
+    font-family: Consolas;
+}
+
+.button {
+    position: relative;
+    color: #2196f3;
+    padding: 15px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.button__line {
+    position: absolute;
+    display: block;
+}
+
+.button__line--top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.button:hover .button__line--top {
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--bottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.button:hover .button__line--bottom {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--left {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #2196f3);
+}
+
+.button:hover .button__line--left {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--right {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.button:hover .button__line--right {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    background-color: #2196f3;
+    color: #333;
+    transition-delay: 1s;
+}
+
+.container2 {
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+}
+
+.container2 {
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+}
