@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
-from .models import AdvertisingRequest
+from .models import AdvertisingRequest, ContactRequest
 from django.core.mail import send_mail
+import random
+import os
 
 
 # Create your views here.
@@ -30,7 +32,35 @@ def send_adv_mail(request):
             text,
             'teamserverr@gmail.com',
             ['teamserverr@gmail.com', 'l.luzhnuy@gmail.com'],
-            fail_silently=False,
+            fail_silently=True,
         )
 
         return redirect("/")
+
+
+def contacting_with_as(request):
+    if request.method == "POST":
+        contact = ContactRequest()
+        contact.full_name = request.POST.get('full_name')
+        contact.your_email = request.POST.get('your_email')
+        contact.how_can_we_help_you = request.POST.get('how_can_we_help_you')
+        contact.file_if_needed = request.FILES.get('file_if_needed')
+        # for filename, contact.file_if_needed in request.FILES.iteritems():
+        #     name = request.FILES[filename].random()
+        #     with open(name, 'rb') as file:
+        #         file
+        contact.save()
+        text = "Client Email: " + contact.your_email + "<br> About Client Project: " \
+            + contact.full_name + "<br>" + "Full Name Client: " \
+            + contact.how_can_we_help_you + "<br>" + "Help Nedded: " \
+            + contact.file_if_needed + "<br>" + "Client Files: "
+        send_mail(
+            'New Client On VolstinyProduction',
+            text,
+            contact.your_email,
+            ['teamserverr@gmail.com', 'l.luzhnuy@gmail.com'],
+            fail_silently=True,
+        )
+
+        return redirect("/")
+
