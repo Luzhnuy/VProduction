@@ -3,4 +3,4 @@ from .models import AdvertisingRequest, ImgAndVideoUploadGallery, ContactRequest
 
 admin.site.register(AdvertisingRequest)
 admin.site.register(ContactRequest)
-admin.site.register(ImgAndVideoUploadGallery)
+# admin.site.register(ImgAndVideoUploadGallery)

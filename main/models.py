@@ -26,3 +26,6 @@ class ContactRequest(models.Model):
 class ImgAndVideoUploadGallery(models.Model):
     image = models.ImageField(upload_to='/static/img/photo_gallery/')
     video = models.FileField(upload_to='/static/img/video_gallery/')
+
+    def __str__(self):
+        return self.image
