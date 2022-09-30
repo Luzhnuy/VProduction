@@ -322,10 +322,13 @@
         </div>
         <div class="text">
             <h1 class="text_h1">About Us</h1>
-            <h5 class="text_h5">Volstiny Production</h5>
+<!--            <h5 class="text_h5">Volstiny Production</h5>-->
             <p class="text_p">OUR TEAM IS EXPERIENCED SPECIALISTS WITH HUGE EXPERIENCE. WE APPROACH WORK WITH CREATIVITY AND SIMPLICITY. ONLY POSITIVE ATTITUDES RULE IN THE TEAM THAT IS WHY OUR CREATIVES AVOID ONLY THE NECESSARY EMOTIONS. EACH BANNER, EACH ANIMATION IS EXECUTED AT THE HIGHEST LEVEL AND GIVE OUR CLIENTS AN EXCEPTIONAL RESULT.
                 CREO, CONVERSIONS AND ROCK-N-ROLL</p>
-            <button class="btn" type="button">Hire Me</button>
+<!--            <button class="btn" type="button">Hire Me</button>-->
+        </div>
+        <div class="secondPhoto">
+            <img src="/static/img/art-robot-android-golova.png">
         </div>
     </div>
 </div>
@@ -385,7 +388,6 @@
 </div>
 <div class="modal-bg hidden">
     <div class="modal hidden">
-        <div class="form">
             <form action="{% url 'send' %}" method="post">
                 {% csrf_token %}
 <!--                <label for="email" required="required">Email</label>-->
@@ -403,42 +405,24 @@
 <!--                <label for="social" >Links to social networks</label>-->
 <!--                <input id="social" name="social" type="text"/>-->
 <!--                <button type="submit">Send</button>-->
-                <div class="inputBox">
-                    <input id="email" name="email" type="email"/>
-                    <span>Your Email</span>
-                </div>
-
-                <div class="inputBox">
-                    <input name="about_project" type="text" required="required">
-                    <span>Tell us more about your product/products. Features, characteristics and advantages</span>
-                </div>
-
-                <div class="inputBox">
-                    <input name="auditory" type="text" required="required">
-                    <span>Who is your audience? (Pains, sex, age, interests and hobbies)</span>
-                </div>
-                <div class="inputBox">
-                    <input name="creative" type="text" required="required">
-                    <span>Wishes and recommendations regarding creative design</span>
-                </div>
-                <div class="inputBox">
-                    <input name="advertising" type="text" required="required">
-                    <span>Have you had experience with advertising campaigns? Tell us a little about him :)</span>
-                </div>
-                <div class="inputBox">
-                    <input name="site" type="text" required="required">
-                    <span>Site (if exists)</span>
-                </div>
-                <div class="inputBox">
-                    <input name="social" type="text" required="required">
-                    <span>Links to social networks</span>
-                </div>
-                <div class="Send-btn">
-                    <button class="btn" type="submit">Send</button>
+                <div class="container-form">
+                    <div class="contact-box">
+                        <div class="left"></div>
+                        <div class="right">
+                            <h2>Order</h2>
+                            <input type="text" class="field" name="email" placeholder="Email">
+                            <input type="text" class="field" name="about_project" placeholder="Tell us more about your product/products. Features, characteristics and advantages">
+                            <input type="text" class="field" name="auditory" placeholder="Who is your audience? (Pains, sex, age, interests and hobbies)">
+                            <input type="text" class="field" name="creative" placeholder="Wishes and recommendations regarding creative design">
+                            <input type="text" class="field" name="advertising" placeholder="Have you had experience with advertising campaigns? Tell us a little about him :)">
+                            <input type="text" class="field" name="site" placeholder="Site (if exists)">
+                            <textarea placeholder="Links to social networks" name="social" class="field"></textarea>
+                            <button class="btn">Send</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="close" title="close"></div>
             </form>
-        </div>
 <!--        <div class="invite">-->
 <!--            <h3 class="invite-h3">We want to learn as much as possible about your product and target audience to make your creative as effective as possible, please tell us a little about yourself</h3>-->
 <!--            <div class="nope">No thanks, I dont like saving money</div>-->
