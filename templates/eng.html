@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="container">
+<div class="container" id="containerHome">
     <video autoplay muted loop id="myVideo">
         <source src="/static/img/video-gallery/4_10.mp4" type="video/mp4">
     </video>
@@ -27,7 +27,7 @@
         </div>
     </div>
 </div>
-<div class="container3">
+<div class="container3" id="container3">
     <div class="bar-box">
         <h2 class="container-title">
             FOR WHO?
@@ -134,7 +134,7 @@
         </div>
     </div>
 </div>
-<div class="container2" id="order">
+<div class="container2" id="container2">
         <div class="bar-box">
             <h2 class="container-title">
                 OUR SERVICES
@@ -284,7 +284,7 @@
         </div>
     </div>
 </div>
-<div class="container5">
+<div class="container5" id="gallery">
     <div class="box">
         <video class="video" autoplay muted loop>
             <source src="/static/img/video-gallery/panda.mp4">
@@ -315,7 +315,7 @@
         </video>
     </div>
 </div>
-<div class="about">
+<div class="about" id="about">
     <div class="content">
         <div class="ContentImg">
             <img src="/static/img/Chapp.png">
@@ -332,7 +332,7 @@
         </div>
     </div>
 </div>
-<div class="container4">
+<div class="container4" id="contact">
     <div class="container-inp">
         <form class="form" method="post" {%  url 'read_as'  %} enctype="multipart/form-data">
             {% csrf_token %}
