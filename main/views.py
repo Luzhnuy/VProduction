@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect
 from .models import AdvertisingRequest, ContactRequest
 from django.core.mail import send_mail
+from django.conf import settings
 import random
+import telegram
 import os
 
 
@@ -21,20 +23,17 @@ def send_adv_mail(request):
         adv_request.site = request.POST.get("site")
         adv_request.social = request.POST.get("social")
         adv_request.save()
-        text = "Client Email: " + adv_request.email + "</br> About Client Project: " \
-               + adv_request.about_project + "</br>" + "Client Audience: " \
-               + adv_request.auditory + "</br>" + "Client Advertising Examples: " \
-               + adv_request.advertising + "</br>" + "What the client want: " \
-               + adv_request.creative + "</br>" + "Client site and social networks" \
-               + adv_request.site + "</br>" + adv_request.social
-        send_mail(
-            'New Request On VolstinyProduction',
-            text,
-            'teamserverr@gmail.com',
-            ['teamserverr@gmail.com', 'l.luzhnuy@gmail.com'],
-            fail_silently=True,
-        )
+        telegram_settings = settings.TELEGRAM
 
+        text = "Client Email: " + adv_request.email + "\n About Client Project: " \
+               + adv_request.about_project + "\n" + "Client Audience: " \
+               + adv_request.auditory + "\n" + "Client Advertising Examples: " \
+               + adv_request.advertising + "\n" + "What the client want: " \
+               + adv_request.creative + "\n" + "Client site and social networks" \
+               + adv_request.site + "\n" + adv_request.social
+
+        bot = telegram.Bot(token=telegram_settings['bot_token'])
+        bot.send_message(chat_id="@%s" % telegram_settings['channel_name'], text=text)
         return redirect("/")
 
 
@@ -50,17 +49,13 @@ def contacting_with_as(request):
         #     with open(name, 'rb') as file:
         #         file
         contact.save()
-        text = "Client Email: " + contact.your_email + "<br> About Client Project: " \
-            + contact.full_name + "<br>" + "Full Name Client: " \
-            + contact.how_can_we_help_you + "<br>" + "Help Nedded: " \
-            + contact.file_if_needed + "<br>" + "Client Files: "
-        send_mail(
-            'New Client On VolstinyProduction',
-            text,
-            contact.your_email,
-            ['teamserverr@gmail.com', 'l.luzhnuy@gmail.com'],
-            fail_silently=True,
-        )
+        telegram_settings = settings.TELEGRAM
+
+        text = "Client Email: " + contact.your_email + "\n" + "Full Name Client: " \
+            + contact.full_name + "\n" + "Help Nedded: " \
+            + contact.how_can_we_help_you
+        bot = telegram.Bot(token=telegram_settings['bot_token'])
+        bot.send_message(chat_id="@%s" % telegram_settings['channel_name'], text=text)
 
         return redirect("/")
 

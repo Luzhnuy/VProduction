@@ -334,7 +334,7 @@
 </div>
 <div class="container4" id="contact">
     <div class="container-inp">
-        <form class="form" method="post" {%  url 'read_as'  %} enctype="multipart/form-data">
+        <form class="form" method="post" action="{%  url 'read_as'  %}" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="inputBox">
                 <input name="full_name" type="text" required="required">
