@@ -25,11 +25,11 @@ def send_adv_mail(request):
         adv_request.save()
         telegram_settings = settings.TELEGRAM
 
-        text = "Client Email: " + adv_request.email + "\n About Client Project: " \
-               + adv_request.about_project + "\n" + "Client Audience: " \
-               + adv_request.auditory + "\n" + "Client Advertising Examples: " \
-               + adv_request.advertising + "\n" + "What the client want: " \
-               + adv_request.creative + "\n" + "Client site and social networks" \
+        text = "***Client Email:*** " + adv_request.email + "\n ***About Client Project:*** " \
+               + adv_request.about_project + "\n" + "***Client Audience:*** " \
+               + adv_request.auditory + "\n" + "***Client Advertising Examples:*** " \
+               + adv_request.advertising + "\n" + "***What the client want:*** " \
+               + adv_request.creative + "\n" + "***Client site and social networks***" \
                + adv_request.site + "\n" + adv_request.social
 
         bot = telegram.Bot(token=telegram_settings['bot_token'])
@@ -51,8 +51,8 @@ def contacting_with_as(request):
         contact.save()
         telegram_settings = settings.TELEGRAM
 
-        text = "Client Email: " + contact.your_email + "\n" + "Full Name Client: " \
-            + contact.full_name + "\n" + "Help Nedded: " \
+        text = "***Client Email:*** " + contact.your_email + "\n" + "***Full Name Client:*** " \
+            + contact.full_name + "\n" + "***Help Needed:*** " \
             + contact.how_can_we_help_you
         bot = telegram.Bot(token=telegram_settings['bot_token'])
         bot.send_message(chat_id="@%s" % telegram_settings['channel_name'], text=text)
