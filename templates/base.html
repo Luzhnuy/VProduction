@@ -3,18 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1">
-    <title>Title</title>
+    <title>Volstiny Production</title>
+    <link rel="icon" type="image/x-icon" href="/static/img/logo.jpg">
+    <!--    <script>-->
+<!--        window.onload = function() {-->
+<!--            document.querySelector("body").style.visibility = "hidden";-->
+<!--            document.querySelector(".loading").style.visibility = "visible";-->
+<!--            window.setTimeout(function () {-->
+<!--                document.querySelector(".loading").style.display = "none";-->
+<!--                document.querySelector("body").style.visibility = "visible";-->
+<!--                document.querySelector("body").classList.remove("hidden");-->
+
+<!--            }, 5000);-->
+<!--        };-->
+<!--    </script>-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
 </head>
-<body>
+<body class="hidden">
+<div class="loading">
+    <div class="loader"></div>
+</div>
+
 <!--<div class="action-con">-->
 <!--    <div class="action">-->
 <!--        <div class="text">-->
@@ -46,28 +66,26 @@
     <div class="menu">
         <div class="toggle"><span class="material-symbols-outlined menu-line">menu</span></div>
         <li style="--i:0;">
-            <a class="menu_a " href="#"><span class="material-symbols-outlined ">home_app_logo</span>Home</a>
+            <a class="menu_a " href="#containerHome"><span class="material-symbols-outlined ">home_app_logo</span>Home</a>
         </li>
         <li style="--i:1;">
-            <a class="menu_a a1" href="#"><span class="material-symbols-outlined">groups</span>For who</a>
+            <a class="menu_a a1" href="#container3"><span class="material-symbols-outlined">groups</span>For who</a>
         </li>
         <li style="--i:2;">
-            <a class="menu_a a2" href="#"><span class="material-symbols-outlined">emoji_objects</span>Creative</a>
+            <a class="menu_a a2" href="#container2"><span class="material-symbols-outlined">emoji_objects</span>Creative</a>
         </li>
         <li style="--i:3;">
-            <a class="menu_a a3" href="#"><span class="material-symbols-outlined"><ion-icon name="cube-outline"></ion-icon></span>About</a>
+            <a class="menu_a a3" href="#about"><span class="material-symbols-outlined"><ion-icon name="cube-outline"></ion-icon></span>About</a>
         </li>
         <li style="--i:4;">
-            <a class="menu_a a4" href="#"><span class="material-symbols-outlined">collections_bookmark</span>gallery</a>
+            <a class="menu_a a4" href="#gallery"><span class="material-symbols-outlined">collections_bookmark</span>gallery</a>
         </li>
         <li style="--i:5;">
-            <a class="menu_a a5" href="#"><span class="material-symbols-outlined">phone_in_talk</span>contact</a>
+            <a class="menu_a a5" href="#contact"><span class="material-symbols-outlined">phone_in_talk</span>contact</a>
         </li>
     </div>
 </div>
 {% block content %}{% endblock %}
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
 <script src="static/libs/vanilla-tilt.js-master/dist/vanilla-tilt.js"></script>
@@ -79,5 +97,40 @@
 {#<script src="/static/admin/js/vanilatilt.js"></script>#}
 {#<script src="/static/js/video.js"></script>#}
 <script src="/static/admin/js/menu.js"></script>
+<script>
+    $(document).ready(function(){
+
+        window.setTimeout(function () {
+            $(".loading").hide();
+            document.querySelector(".text1").style.animation = "text 3s 1";
+            document.querySelector(".text2").style.animation = "text 3s 1";
+            $("body").removeClass("hidden");
+        }, 2000);
+    })
+</script>
+<script>
+    function getSearchParameters() {
+        var prmstr = window.location.search.substr(1);
+        return prmstr != null && prmstr != "" ? transformToAssocArray(prmstr) : {};
+    }
+
+    function transformToAssocArray( prmstr ) {
+        var params = {};
+        var prmarr = prmstr.split("&");
+        for ( var i = 0; i < prmarr.length; i++) {
+            var tmparr = prmarr[i].split("=");
+            params[tmparr[0]] = tmparr[1];
+        }
+        return params;
+    }
+
+    var params = getSearchParameters();
+    console.log(params);
+    if (params && params.modal == "open") {
+        $('body').addClass('hidden');
+        $('.modal-bg').removeClass('hidden');
+        $('.modal').removeClass('hidden');
+    }
+</script>
 </body>
 </html>

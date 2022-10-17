@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-@&g+h1j1&_zn6!6r_1@q=d^=laspj$1x+!r=aebs0aa_wo%mf@
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-
+CSRF_TRUSTED_ORIGINS=['https://www.volstinyproduction.com', 'https://volstinyproduction.com', 'http://localhost:1337']
 
 # Application definition
 
@@ -139,3 +139,7 @@ EMAIL_HOST_PASSWORD = 'turupuru2'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+TELEGRAM = {
+    'bot_token': '5652493276:AAG9eCCzXtmfR3mM6tWIsrGhB4bOwD9a0T4',
+    'channel_name': 'volstinyproductionrequests',
+}
