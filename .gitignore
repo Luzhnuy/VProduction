@@ -1,3 +1,4 @@
 static/img/video-gallery/NOMINAL-EVERYDAYANYONE(Trippy Video).gif
 docker/mysql
 static/img/video-gallery
+ */__pycache__/*
