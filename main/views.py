@@ -12,6 +12,10 @@ def main(request):
     return render(request, "eng.html", {})
 
 
+def main_ukr(requset):
+    return render(requset, "ukr.html", {})
+
+
 def send_adv_mail(request):
     if request.method == "POST":
         adv_request = AdvertisingRequest()

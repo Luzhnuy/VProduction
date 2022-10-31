@@ -272,7 +272,6 @@ body {
 /*!*MENU BLOCK*!*//* icons*/
 
 a .material-symbols-outlined {
-    font-size: 10px;
     font-weight: 300;
     transform: rotate(0deg);
     color: #2196f3;
@@ -346,7 +345,7 @@ a .material-symbols-outlined {
     min-height: 20vh;
     position: fixed;
     top:38%;
-    left: 89%;
+    left: 88%;
     z-index: 25;
     display: flex;
 }
@@ -1983,7 +1982,7 @@ body.hidden {
     }
 
     a .material-symbols-outlined {
-        font-size: 21px;
+        font-size: 25px;
         color: #2196f3;
 
     }
