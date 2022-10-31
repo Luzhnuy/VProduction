@@ -272,7 +272,7 @@ body {
 /*!*MENU BLOCK*!*//* icons*/
 
 a .material-symbols-outlined {
-    font-size: 28px;
+    font-size: 10px;
     font-weight: 300;
     transform: rotate(0deg);
     color: #2196f3;
@@ -283,9 +283,9 @@ a .material-symbols-outlined {
     border-radius: 50%;
     color: #2196f3;
 }
-a.menu_a {
-    color: #2196f3;
-}
+/*a.menu_a {*/
+/*    color: #2196f3;*/
+/*}*/
 .toggle-icon {
     text-align: center;
     top: 8px;
@@ -294,11 +294,11 @@ a.menu_a {
     color: #2196f3;
 }
 .menu_a {
-    color: #2196f3;
+    color: #FFFFFF;
 }
 .menu_a.a1 {
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 8px;
     letter-spacing: 1px;
     font-weight: 500;
     color: #2196f3;
@@ -307,7 +307,7 @@ a.menu_a {
 .menu_a.a2 {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 13px;
+    font-size: 8px;
     font-weight: 500;
     color: #2196f3;
     transform: rotate(-120deg);
@@ -315,7 +315,7 @@ a.menu_a {
 .menu_a.a3 {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 13px;
+    font-size: 8px;
     font-weight: 300;
     color: #2196f3;
     transform: rotate(180deg);
@@ -323,7 +323,7 @@ a.menu_a {
 .menu_a.a4 {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 13px;
+    font-size: 8px;
     font-weight: 300;
     color: #2196f3;
     transform: rotate(-240deg);
@@ -331,7 +331,7 @@ a.menu_a {
 .menu_a.a5 {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 13px;
+    font-size: 8px;
     font-weight: 300;
     color: #2196f3;
     transform: rotate(-300deg);
@@ -378,24 +378,33 @@ a.menu_a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 11px;
+    /*border-radius: 50%;*/
+    /*background: rgba(59, 60, 60, 0.85);*/
     text-align: center;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 25px;
     transition: 0.5s;
 }
 .menu li .menu_a:hover {
-    color: #008eff;
+    color: #FFFFFF;
 }
-
+.menu-text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #2196f3;
+}
 .toggle {
     position: absolute;
     width: 40px;
     height: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    z-index: 10000;
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 50%;
+    align-items: center;
+    z-index: 1000;
+    /*border-radius: 50%;*/
     cursor: pointer;
     box-shadow: 0 0 4px rgba(0,0,0,0.15);
     font-size: 2em;
@@ -406,6 +415,8 @@ a.menu_a {
 }
 .menu_a {
     text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
     color: white;
     font-family: 'Raleway', sans-serif;
 }
@@ -1778,6 +1789,7 @@ body.hidden {
     width: 100%;
     height: 100%;
     display: flex;
+    border-radius: 50px;
     justify-content: center;
     align-items: center;
     padding: 20px 100px;
@@ -1792,7 +1804,7 @@ body.hidden {
     top: 0;
     background: url("../img/img_creative/777.png") no-repeat center;
     background-size: cover;
-    filter: blur(50px);
+    filter: blur(20px);
     z-index: -1;
 }
 .container-form  .contact-box{
@@ -1800,9 +1812,10 @@ body.hidden {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    border-radius: 18px;
     align-items: center;
     text-align: center;
-    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    box-shadow: 0px 0px 19px 5px rgba(1, 253, 253, 0.3), 0px 0px 29px 10px rgba(1, 102, 253, 0.5);
 }
 
 .container-form  .left{
@@ -1860,7 +1873,7 @@ body.hidden {
 .container-form .btn{
     width: 100%;
     padding: 0.5rem 1rem;
-    background-color: #2196f3;
+    background-color: #045387;
     color: #fff;
     font-size: 1.1rem;
     border: none;
@@ -1935,6 +1948,7 @@ body.hidden {
     }
     .material-symbols-outlined.menu-line {
         font-size: 40px;
+
     }
     .container5 .box .img-video-box .img{
         display: flex;
@@ -1970,35 +1984,43 @@ body.hidden {
 
     a .material-symbols-outlined {
         font-size: 21px;
+        color: #2196f3;
+
     }
 
     .menu_a.a {
         font-size: 9px;
+        color: #FFFFFF;
     }
 
     .menu_a.a1 {
         font-size: 9px;
+        color: #FFFFFF;
     }
 
     .menu_a.a2 {
         font-size: 9px;
+        color: #FFFFFF;
     }
 
     .menu_a.a3 {
         font-size: 9px;
+        color: #FFFFFF;
     }
 
     .menu_a.a4 {
         font-size: 9px;
+        color: #FFFFFF;
     }
 
     .menu_a.a5 {
         font-size: 9px;
+        color: #FFFFFF;
     }
 
     .block_menu {
         top: 35%;
-        left: 79%;
+        left: 65%;
     }
 
     .container5 {
@@ -2202,7 +2224,7 @@ body.hidden {
 @media screen and (max-width: 820px) {
     .block_menu {
         top: 35%;
-        left: 77%;
+        left: 65%;
         overflow: visible;
     }
     .about .content {
@@ -2227,7 +2249,7 @@ body.hidden {
 @media screen and (max-width: 768px) {
     .block_menu {
         top: 35%;
-        left: 77%;
+        left: 65%;
         overflow: visible;
     }
     .about .content {
@@ -2252,7 +2274,7 @@ body.hidden {
 @media screen and (max-width: 700px) {
     .block_menu {
         top: 35%;
-        left: 75%;
+        left: 65%;
         overflow: visible;
     }
     .about .content {
@@ -2277,7 +2299,7 @@ body.hidden {
 @media screen and (max-width: 670px) {
     .block_menu {
         top: 35%;
-        left: 73%;
+        left: 65%;
         overflow: visible;
     }
     .about .content {
@@ -2302,7 +2324,7 @@ body.hidden {
 @media screen and (max-width: 550px) {
      .block_menu {
         top: 35%;
-        left: 68%;
+        left: 65%;
         overflow: visible;
     }
     .about .content {
@@ -2327,7 +2349,7 @@ body.hidden {
 @media screen and (max-width: 500px) {
      .block_menu {
         top: 35%;
-        left: 68%;
+        left: 65%;
         overflow: visible;
     }
     .about .content {
@@ -2352,7 +2374,7 @@ body.hidden {
 @media screen and (max-width: 450px) {
      .block_menu {
         top: 35%;
-        left: 68%;
+        left: 65%;
         overflow: visible;
     }
     .about .content {
@@ -2377,7 +2399,7 @@ body.hidden {
 @media screen and (max-width: 414px) {
      .block_menu {
         top: 35%;
-        left: 64%;
+        left: 60%;
         overflow: visible;
     }
     .about .content {
@@ -2401,7 +2423,7 @@ body.hidden {
 @media screen and (max-width: 376px) {
      .block_menu {
         top: 35%;
-        left: 64%;
+        left: 60%;
         overflow: visible;
     }
     .about .content {
