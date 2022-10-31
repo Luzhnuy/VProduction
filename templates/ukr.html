@@ -1,0 +1,451 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="block-logo">
+    <div class="logo">
+        <b><a class="logo-text"><span class="logo-P">VOLSTINY</span>PRODUCTION</a></b>
+    </div>
+    <div class="cont-lang">
+        <a class="lang" href="/"><span class="material-symbols-outlined" id="icon-lang">language</span></a>
+    </div>
+</div>
+
+    {# Menu #}
+    <div class="block_menu">
+    <div class="menu">
+        <div class="toggle"><span class="material-symbols-outlined menu-line">menu</span></div>
+        <li style="--i:0;">
+            <a class="menu_a " href="#containerHome"><span class="material-symbols-outlined ">home_app_logo</span><span class="menu-text">Головна</span></a>
+        </li>
+        <li style="--i:1;">
+            <a class="menu_a a1" href="#container3"><span class="material-symbols-outlined">groups</span><span class="menu-text">Для кого</span></a>
+        </li>
+        <li style="--i:2;">
+            <a class="menu_a a2" href="#container2"><span class="material-symbols-outlined">emoji_objects</span><span class="menu-text">Творчий</span></a>
+        </li>
+        <li style="--i:3;">
+            <a class="menu_a a3" href="#about"><span class="material-symbols-outlined"><ion-icon name="cube-outline"></ion-icon></span><span class="menu-text">Про нас</span></a>
+        </li>
+        <li style="--i:4;">
+            <a class="menu_a a4" href="#gallery"><span class="material-symbols-outlined">collections_bookmark</span><span class="menu-text">галерея</span></a>
+        </li>
+        <li style="--i:5;">
+            <a class="menu_a a5" href="#contact"><span class="material-symbols-outlined">phone_in_talk</span><span class="menu-text">контакт</span></a>
+        </li>
+    </div>
+</div>
+
+
+<div class="container" id="containerHome">
+    <video autoplay muted loop id="myVideo">
+        <source src="/static/img/video-gallery/4_10.mp4" type="video/mp4">
+    </video>
+    <div class="background-transparent">
+        <div class="dark_gif">
+            <div class="controller-text">
+                <div class="center-text">
+                    <span class="text1">Рекламні креативи</span>
+                    <span class="text2">нової ери</span>
+                </div>
+            </div>
+            <div class="contr-button">
+                <div class="btn-control">
+                    <a href="#" class="button open">
+                        <span class="button__line button__line--top"></span>
+                        <span class="button__line button__line--right"></span>
+                        <span class="button__line button__line--bottom"></span>
+                        <span class="button__line button__line--left"></span>
+                        ЗАМОВИТИ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container2" id="container2">
+    <div class="bar-box">
+        <h2 class="container-title">
+            НАШІ ПОСЛУГИ
+            <!-- <span class="span"><i></i>F</span>
+                <span class="span"><i></i>O</span>
+                <span class="span"><i></i>R</span>
+                <span class="span"><i></i>W</span>
+                <span class="span"><i></i>H</span>
+                <span class="span"><i></i>O</span> -->
+        </h2>
+    </div>
+    <div class="wrap">
+        <div class="card">
+            <div class="front"><span><img class="img" src="/static/img/img_creative/2d-animations.png"></span></div>
+            <div class="back">
+                <span>
+                    <h1>2D Анімація</h1>
+                    <h2>(Починається з 30$)</h2>
+                    <ion-icon class="arrow-static" name="chevron-down-outline"></ion-icon>
+                    <p>Натисніть мене</p>
+                    <a href="https://www.artstation.com/artwork/4X5RWn">
+                        <ion-icon class="icons"  name="square-outline"></ion-icon>
+                    </a>
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front"><span><img class="img" src="/static/img/img_creative/3d-animation.png"></span></div>
+            <div class="back">
+                <span>
+                    <h1>3D Анімація</h1>
+                    <h2>(Починається з  80$)</h2>
+                    <ion-icon class="arrow-static" name="chevron-down-outline"></ion-icon>
+                    <p>Натисніть мене</p>
+                    <a href="https://www.artstation.com/artwork/YKWPW3">
+                        <ion-icon class="icons"  name="cube-outline"></ion-icon>
+                    </a>
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front"><span><img class="img" src="/static/img/img_creative/banner.png"></span></div>
+            <div class="back">
+                <span>
+                    <h1>Рекламні банери</h1>
+                    <h2>(Починається з 25$)</h2>
+                    <ion-icon class="arrow-static" name="chevron-down-outline"></ion-icon>
+                    <p>Натисніть мене</p>
+                    <a href="https://www.artstation.com/artwork/g81lA8"><ion-icon class="icons" name="browsers-outline"></ion-icon></a>
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front"><span><img class="img" src="/static/img/img_creative/Event-Promo.png"></span></div>
+            <div class="back">
+                <span>
+                    <h1>Промо події</h1>
+                    <h2>(Починається з 30$)</h2>
+                    <ion-icon class="arrow-static" name="chevron-down-outline"></ion-icon>
+                    <p>Натисніть мене</p>
+                    <a href="https://www.artstation.com/artwork/LedEA0">
+                        <ion-icon class="icons"  name="filter-outline"></ion-icon>
+                    </a>
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front"><span><img class="img" src="/img/img_creative/876.png"></span></div>
+            <div class="back">
+                <span>
+                    <h1>Ілюстраційні відео</h1>
+                    <h2>(Починається з 30$)</h2>
+                    <ion-icon class="arrow-static" name="chevron-down-outline"></ion-icon>
+                    <p>Натисніть мене</p>
+                    <a href="https://www.artstation.com/artwork/WmDb4J"><ion-icon class="icons" name="bag-remove-outline"></a>
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front"><span><img class="img" src="/img/img_creative/567.png"></span></div>
+            <div class="back">
+                <span>
+                    <h1>Керування YouTube</h1>
+                    <h2>(Ціна індивідуальна)</h2>
+                    <ion-icon class="arrow-static" name="chevron-down-outline"></ion-icon>
+                    <p>Натисніть мене</p>
+                    <a href="https://www.youtube.com/c/LuxWash"><ion-icon class="logo-youtube" name="logo-youtube"></ion-icon></a>
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front"><span><img class="img" src="/img/img_creative/877.png"></span></div>
+            <div class="back">
+                <span>
+                    <h1>Персональний брендинг</h1>
+                    <h2>(Починається з 15$)</h2>
+                    <ion-icon class="arrow-static" name="chevron-down-outline"></ion-icon>
+                    <p>Натисніть мене</p>
+                    <a href="https://www.artstation.com/artwork/NGPDwb"><ion-icon class="icons" name="person-outline"></ion-icon></a>
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front"><span><img class="img" src="/img/img_creative/A2323.png"></span></div>
+            <div class="back">
+                <span>
+                    <h1>Instagram історії</h1>
+                    <h2>(Починається з 10$)</h2>
+                    <ion-icon class="arrow-static" name="chevron-down-outline"></ion-icon>
+                    <p>Натисніть мене</p>
+                    <a href="https://www.artstation.com/artwork/WmDE2J"><ion-icon class="icons" name="logo-instagram"></ion-icon></a>
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front"><span><img class="img" src="/img/img_creative/animated-adv.png"></span></div>
+            <div class="back">
+                <span>
+                    <h1>Анімована реклама</h1>
+                    <h2>(Починається з 30$)</h2>
+                    <ion-icon class="arrow-static" name="chevron-down-outline"></ion-icon>
+                    <p>Натисніть мене</p>
+                    <a href="https://www.artstation.com/artwork/yJvQnx"><ion-icon class="icons" name="eye-outline"></ion-icon></a>
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="front"><span><img class="img" src="/img/img_creative/75777777.png"></span></div>
+            <div class="back">
+                <span>
+                    <h1>Редагування відео</h1>
+                    <h2>(Починається з 15$)</h2>
+                    <ion-icon class="arrow-static" name="chevron-down-outline"></ion-icon>
+                    <p>Натисніть мене</p>
+                    <a href="https://www.artstation.com/artwork/3qYaAD"><ion-icon class="icons" name="videocam-outline"></ion-icon></a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container4" id="contact">
+    <div class="container-inp">
+        <form class="form" method="post" action="{%  url 'read_as'  %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="inputBox">
+                <input name="full_name" type="text" required="required">
+                <span>Повне ім'я</span>
+            </div>
+            <div class="inputBox">
+                <input name="your_email" type="email" required="required">
+                <span>Твоя електронна пошта</span>
+            </div>
+            <div class="inputBox">
+                <input name="how_can_we_help_you" type="text" required="required">
+                <span>Як ми можемо вам допомогти</span>
+            </div>
+            <div class="Send-btn">
+                <button class="btn" type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+    <div class="contact-with-as">
+        <div class="cards">
+            <div class="imgBx">
+                <img class="png" src="/static/img/phone-ringing-14 (1).png">
+            </div>
+            <div class="content">
+                <h3>Номер телефону</h3>
+                <a class="content-a" href="tel:+380(97)1750340">+380(97)1750340</a>
+                <a class="content-a" href="tel:+380(68)5553001">+380(68)5553001</a>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="imgBx">
+                <img class="png" src="/static/img/address.png">
+            </div>
+            <div class="content">
+                <h3>Адреса</h3>
+                <p>Львів Володимира Великого,4</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="imgBx">
+                <img class="png" src="/static/img/email.png">
+            </div>
+            <div class="content">
+                <h3>Електронна пошта</h3>
+                <a class="content-a">teamserverr@gmail.com</a>
+                <a class="content-a">l.luzhnuy@gmail.com</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container3" id="container3">
+    <div class="bar-box">
+        <h2 class="container-title">
+            ДЛЯ КОГО?
+            <!-- <span class="span"><i></i>F</span>
+            <span class="span"><i></i>O</span>
+            <span class="span"><i></i>R</span>
+            <span class="span"><i></i>W</span>
+            <span class="span"><i></i>H</span>
+            <span class="span"><i></i>O</span> -->
+        </h2>
+    </div>
+    <div class="for-who">
+        <div class="three">
+            <div class="card-for-who">
+                    <div class="imgBz">
+                        <img src="/static/img/img-for-who/Cards/Affilate Card/0019_1300x820-removebg.png">
+                    </div>
+                    <div class="imgBx">
+                        <img src="/static/img/img-for-who/Cards/Affilate Card/Affilate  Card logo png.png">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Медіа</h2>
+                        <h2>покупці</h2>
+                        <div class="color">
+                            <h3 class="color-h3"></h3>
+                        </div>
+                        <a href="#" class="open">
+                            <span>Купити зараз</span>
+                        </a>
+                    </div>
+            </div>
+            <div class="card-for-who">
+                <div class="imgBz imgBz-left1">
+                    <img src="/static/img/img-for-who/Cards/Private Business card/[Universal Renders] - JEFF BEZOS RENDER.png">
+                </div>
+                <div class="imgBx imgBx-left1">
+                    <img src="/static/img/img-for-who/Cards/Private Business card/Affilate__Card-removebg-preview.png">
+                </div>
+                <div class="contentBx">
+                    <h2>В приватному житті</h2>
+                    <h2>бізнес</h2>
+                    <div class="color">
+                        <h3 class="color-h3"></h3>
+                    </div>
+                    <a href="#" class="open">
+                        <span>Купити зараз</span>
+                    </a>
+                </div>
+            </div>
+            <div class="card-for-who">
+                <div class="imgBz imgBz-left2">
+                    <img src="/static/img/img-for-who/Cards/Youtubers/mrbeast-removebg-preview.png">
+                </div>
+                <div class="imgBx imgBx-left2">
+                    <img src="/static/img/img-for-who/Cards/Youtubers/Youtube-logo-icon-on-transparent-background-PNG.png">
+                </div>
+                <div class="contentBx">
+                    <h2>Youtube</h2>
+                    <h2>Блогери</h2>
+                    <div class="color">
+                        <h3 class="color-h3"></h3>
+                    </div>
+                    <a href="#" class="open">
+                        <span>Купити зараз</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="three">
+            <div class="card-for-who">
+                    <div class="imgBz imgBz-left3">
+                        <img src="/static/img/img-for-who/Insta Bloggers/5dbb3b198c0d1-removebg-preview.png">
+                    </div>
+                    <div class="imgBx imgBx-left3">
+                        <img src="/static/img/img-for-who/Insta Bloggers/peter-suthinu-4KtpdFMvkNU-unsplash-removebg-preview.png">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Instagram Блогери</h2>
+                        <div class="color">
+                            <h3 class="color-h3"></h3>
+                        </div>
+                        <a href="#" class="open">
+                            <span>Купити зараз</span>
+                        </a>
+                    </div>
+            </div>
+            <div class="card-for-who">
+                <div class="imgBz imgBz-left4">
+                    <img src="/static/img/img-for-who/Speakrs/Instagram Blogger1s.png">
+                </div>
+                <div class="imgBx imgBx-left4">
+                    <img src="/static/img/img-for-who/Speakrs/—Pngtree—song board photo speech microphone_6241627.png">
+                </div>
+                <div class="contentBx cbx">
+                    <h2>Спікери</h2>
+                    <div class="color">
+                        <h3 class="color-h3"></h3>
+                    </div>
+                    <a href="#" class="open">
+                        <span>Купити зараз</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container5" id="gallery">
+    <div class="box">
+        <video class="video" автоматичне відтворення приглушеного циклу>
+            <source src="/static/img/video-gallery/panda.mp4">
+        </video>
+    </div>
+    <div class="box video3">
+        <video class="video1" цикл автоматичного відтворення з приглушеним звуком>
+            <source src="/static/img/video-gallery/111111.mp4">
+        </video>
+        <div class="img-video-box">
+            <img class="img" src="/img/img_creative/777.png">
+            <video class="video2" цикл автоматичного відтворення з приглушеним звуком>
+                <source src="/static/img/video-gallery/Gembla_Huli.mp4">
+            </video>
+        </div>
+        <video class="video3" цикл автоматичного відтворення з приглушеним звуком>
+            <source src="/static/img/video-gallery/video/4.mp4">
+        </video>
+    </div>
+    <div class="box">
+        <video class="video" цикл автоматичного відтворення з приглушеним звуком>
+            <source src="/static/img/video-gallery/Final%20Render_2_3.mp4">
+        </video>
+    </div>
+    <div class="box">
+        <video class="video" цикл автоматичного відтворення з приглушеним звуком>
+            <source src="/static/img/video-gallery/PreRenderMotion.mp4">
+        </video>
+    </div>
+</div>
+<div class="about" id="about">
+    <div class="content">
+        <div class="ContentImg">
+            <img src="/static/img/Chapp.png">
+        </div>
+        <div class="text">
+            <h1 class="text_h1">Про нас</h1>
+<!--            <h5 class="text_h5">Volstiny Production</h5>-->
+            <p class="text_p">НАША КОМАНДА - ДОСВІДЧЕНІ ПРОФЕСІОНАЛИ З ВЕЛИЧЕЗНИМ ДОСВІДОМ РОБОТИ. МИ ПІДХОДИМО ДО РОБОТИ ТВОРЧО І ПРОСТО. В КОМАНДІ ПАНУЄ ТІЛЬКИ ПОЗИТИВНИЙ НАСТРІЙ, ТОМУ НАШІ КРЕАТИВИ УНИКАЮТЬ ТІЛЬКИ НЕОБХІДНИХ ЕМОЦІЙ. КОЖЕН БАНЕР, КОЖНА АНІМАЦІЯ ВИКОНАНІ НА НАЙВИЩОМУ РІВНІ І ДАЮТЬ НАШИМ КЛІЄНТАМ ВИНЯТКОВИЙ РЕЗУЛЬТАТ.
+                Я СТВОРЮЮ, КОНВЕРТУЮ І РОК-Н-РОЛ</p>
+<!--            <button class="btn" type="button">Hire Me</button>-->
+        </div>
+{#        <div class="secondPhoto">#}
+{#            <img src="/static/img/art-robot-android-golova.png">#}
+{#        </div>#}
+    </div>
+</div>
+<div class="modal-bg hidden">
+    <div class="modal hidden">
+            <form action="{% url 'send' %}" method="post">
+                {% csrf_token %}
+                <div class="container-form">
+                    <div class="contact-box">
+                        <div class="left"></div>
+                        <div class="right">
+                            <h2>порядок</h2>
+                            <input type="text" class="field" name="email" placeholder="Електронна пошта">
+                            <input type="text" class="field" name="about_project" placeholder="Розкажіть нам більше про свій продукт/продукти. Особливості, характеристики та переваги">
+                            <input type="text" class="field" name="auditory" placeholder="Хто ваша аудиторія? (Болі, стать, вік, інтереси та хобі)">
+                            <input type="text" class="field" name="creative" placeholder="Побажання та рекомендації щодо креативного оформлення">
+                            <input type="text" class="field" name="advertising" placeholder="У вас був досвід проведення рекламних кампаній? Розкажіть трохи про нього :)">
+                            <input type="text" class="field" name="site" placeholder="Сайт (якщо є)">
+                            <textarea placeholder="Links to social networks" name="social" class="field"></textarea>
+                            <button class="btn">Надіслати</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="close" title="close"></div>
+            </form>
+<!--        <div class="invite">-->
+<!--            <h3 class="invite-h3">We want to learn as much as possible about your product and target audience to make your creative as effective as possible, please tell us a little about yourself</h3>-->
+<!--            <div class="nope">No thanks, I dont like saving money</div>-->
+<!--            <div class="close" title="close"></div>-->
+<!--        </div>-->
+    </div>
+</div>
+{% endblock %}
