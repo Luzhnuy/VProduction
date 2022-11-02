@@ -3,15 +3,13 @@ from django.db import models
 
 class AdvertisingRequest(models.Model):
     email = models.EmailField(null=False)
-    about_project = models.TextField()
-    auditory = models.TextField()
-    creative = models.TextField()
-    advertising = models.TextField()
-    site = models.TextField()
-    social = models.TextField()
+    your_name = models.TextField()
+    telephone = models.TextField()
+    short_description = models.TextField()
+    select = models.TextField()
 
     def __str__(self):
-        return self.about_project
+        return self.your_name
 
 
 class ContactRequest(models.Model):

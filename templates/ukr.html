@@ -1,14 +1,37 @@
 {% extends 'base.html' %}
 {% block content %}
     <div class="block-logo">
-    <div class="logo">
-        <b><a class="logo-text"><span class="logo-P">VOLSTINY</span>PRODUCTION</a></b>
-    </div>
-    <div class="cont-lang">
+        <div class="logo">
+            <b><a class="logo-text"><span class="logo-P">VOLSTINY</span>PRODUCTION</a></b>
+        </div>
+        <div class="cont-lang">
         <a class="lang" href="/"><span class="material-symbols-outlined" id="icon-lang">language</span></a>
+        </div>
     </div>
+{#Mobile menu#}
+<div class="control-mobile-menu">
+    <nav class="navbar">
+        <div class="logo">
+            <b><a class="logo-text"><span class="logo-P">VOLSTINY</span>PRODUCTION</a></b>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#containerHome" class="nav-link">Головна</a></li>
+            <li class="nav-item"><a href="#container3" class="nav-link">Для Кого</a></li>
+            <li class="nav-item"><a href="#container2" class="nav-link">Креативи</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">Про Нас</a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link">Галерея</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Контакти</a></li>
+            <li class="nav-item"><a class="lang" href="/"><span class="material-symbols-outlined" id="icon-lang">language</span></a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
 </div>
 
+</div>
     {# Menu #}
     <div class="block_menu">
     <div class="menu">
@@ -20,16 +43,16 @@
             <a class="menu_a a1" href="#container3"><span class="material-symbols-outlined">groups</span><span class="menu-text">Для кого</span></a>
         </li>
         <li style="--i:2;">
-            <a class="menu_a a2" href="#container2"><span class="material-symbols-outlined">emoji_objects</span><span class="menu-text">Творчий</span></a>
+            <a class="menu_a a2" href="#container2"><span class="material-symbols-outlined">emoji_objects</span><span class="menu-text">Креативи</span></a>
         </li>
         <li style="--i:3;">
             <a class="menu_a a3" href="#about"><span class="material-symbols-outlined"><ion-icon name="cube-outline"></ion-icon></span><span class="menu-text">Про нас</span></a>
         </li>
         <li style="--i:4;">
-            <a class="menu_a a4" href="#gallery"><span class="material-symbols-outlined">collections_bookmark</span><span class="menu-text">галерея</span></a>
+            <a class="menu_a a4" href="#gallery"><span class="material-symbols-outlined">collections_bookmark</span><span class="menu-text">Галерея</span></a>
         </li>
         <li style="--i:5;">
-            <a class="menu_a a5" href="#contact"><span class="material-symbols-outlined">phone_in_talk</span><span class="menu-text">контакт</span></a>
+            <a class="menu_a a5" href="#contact"><span class="material-symbols-outlined">phone_in_talk</span><span class="menu-text">Контакт</span></a>
         </li>
     </div>
 </div>
@@ -133,7 +156,7 @@
         </div>
 
         <div class="card">
-            <div class="front"><span><img class="img" src="/img/img_creative/876.png"></span></div>
+            <div class="front"><span><img class="img" src="/static/img/img_creative/876.png"></span></div>
             <div class="back">
                 <span>
                     <h1>Ілюстраційні відео</h1>
@@ -146,7 +169,7 @@
         </div>
 
         <div class="card">
-            <div class="front"><span><img class="img" src="/img/img_creative/567.png"></span></div>
+            <div class="front"><span><img class="img" src="/static/img/img_creative/567.png"></span></div>
             <div class="back">
                 <span>
                     <h1>Керування YouTube</h1>
@@ -159,7 +182,7 @@
         </div>
 
         <div class="card">
-            <div class="front"><span><img class="img" src="/img/img_creative/877.png"></span></div>
+            <div class="front"><span><img class="img" src="/static/img/img_creative/877.png"></span></div>
             <div class="back">
                 <span>
                     <h1>Персональний брендинг</h1>
@@ -172,7 +195,7 @@
         </div>
 
         <div class="card">
-            <div class="front"><span><img class="img" src="/img/img_creative/A2323.png"></span></div>
+            <div class="front"><span><img class="img" src="/static/img/img_creative/A2323.png"></span></div>
             <div class="back">
                 <span>
                     <h1>Instagram історії</h1>
@@ -185,7 +208,7 @@
         </div>
 
         <div class="card">
-            <div class="front"><span><img class="img" src="/img/img_creative/animated-adv.png"></span></div>
+            <div class="front"><span><img class="img" src="/static/img/img_creative/animated-adv.png"></span></div>
             <div class="back">
                 <span>
                     <h1>Анімована реклама</h1>
@@ -198,7 +221,7 @@
         </div>
 
         <div class="card">
-            <div class="front"><span><img class="img" src="/img/img_creative/75777777.png"></span></div>
+            <div class="front"><span><img class="img" src="/static/img/img_creative/75777777.png"></span></div>
             <div class="back">
                 <span>
                     <h1>Редагування відео</h1>
@@ -373,31 +396,31 @@
 </div>
 <div class="container5" id="gallery">
     <div class="box">
-        <video class="video" автоматичне відтворення приглушеного циклу>
+        <video class="video" autoplay muted loop>
             <source src="/static/img/video-gallery/panda.mp4">
         </video>
     </div>
     <div class="box video3">
-        <video class="video1" цикл автоматичного відтворення з приглушеним звуком>
+        <video class="video1" autoplay muted loop>
             <source src="/static/img/video-gallery/111111.mp4">
         </video>
         <div class="img-video-box">
             <img class="img" src="/img/img_creative/777.png">
-            <video class="video2" цикл автоматичного відтворення з приглушеним звуком>
+            <video class="video2" autoplay muted loop>
                 <source src="/static/img/video-gallery/Gembla_Huli.mp4">
             </video>
         </div>
-        <video class="video3" цикл автоматичного відтворення з приглушеним звуком>
+        <video class="video3" autoplay muted loop>
             <source src="/static/img/video-gallery/video/4.mp4">
         </video>
     </div>
     <div class="box">
-        <video class="video" цикл автоматичного відтворення з приглушеним звуком>
+        <video class="video" autoplay muted loop>
             <source src="/static/img/video-gallery/Final%20Render_2_3.mp4">
         </video>
     </div>
     <div class="box">
-        <video class="video" цикл автоматичного відтворення з приглушеним звуком>
+        <video class="video" autoplay muted loop>
             <source src="/static/img/video-gallery/PreRenderMotion.mp4">
         </video>
     </div>
@@ -427,14 +450,19 @@
                     <div class="contact-box">
                         <div class="left"></div>
                         <div class="right">
-                            <h2>порядок</h2>
+                            <h2>Заповніть форму і наш менеджер зв'яжеться з вами</h2>
                             <input type="text" class="field" name="email" placeholder="Електронна пошта">
-                            <input type="text" class="field" name="about_project" placeholder="Розкажіть нам більше про свій продукт/продукти. Особливості, характеристики та переваги">
-                            <input type="text" class="field" name="auditory" placeholder="Хто ваша аудиторія? (Болі, стать, вік, інтереси та хобі)">
-                            <input type="text" class="field" name="creative" placeholder="Побажання та рекомендації щодо креативного оформлення">
-                            <input type="text" class="field" name="advertising" placeholder="У вас був досвід проведення рекламних кампаній? Розкажіть трохи про нього :)">
-                            <input type="text" class="field" name="site" placeholder="Сайт (якщо є)">
-                            <textarea placeholder="Links to social networks" name="social" class="field"></textarea>
+                            <div class="select-costom">
+                                <select name="select">
+                                    <option class="marquee" value="0">Як вам зручніше зв'язатись ?</option>
+                                    <option value="telegram">Telegram</option>
+                                    <option value="viber">Viber</option>
+                                    <option value="number">Number</option>
+                                </select>
+                            </div>
+                            <input type="text" class="field" name="telephone" placeholder="Ваш номер телефону">
+                            <input type="text" class="field" name="your_name" placeholder="Ваше Ім'я">
+                            <textarea placeholder="Короткий Опис" name="short_description" class="field"></textarea>
                             <button class="btn">Надіслати</button>
                         </div>
                     </div>

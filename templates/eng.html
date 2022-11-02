@@ -9,6 +9,30 @@
     </div>
 </div>
 
+{#Mobile menu#}
+<div class="control-mobile-menu">
+    <nav class="navbar">
+        <div class="logo">
+            <b><a class="logo-text"><span class="logo-P">VOLSTINY</span>PRODUCTION</a></b>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#containerHome" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#container3" class="nav-link">For Who</a></li>
+            <li class="nav-item"><a href="#container2" class="nav-link">Creative</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a class="lang" href="/"><span class="material-symbols-outlined" id="icon-lang">language</span></a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</div>
+
+
 {# Menu #}
     <div class="block_menu">
     <div class="menu">
@@ -26,7 +50,7 @@
             <a class="menu_a a3" href="#about"><span class="material-symbols-outlined"><ion-icon name="cube-outline"></ion-icon></span><span class="menu-text">About</span></a>
         </li>
         <li style="--i:4;">
-            <a class="menu_a a4" href="#gallery"><span class="material-symbols-outlined">collections_bookmark</span><span class="menu-text">gallery</span></a>
+            <a class="menu_a a4" href="#gallery"><span class="material-symbols-outlined">collections_bookmark</span><span class="menu-text">Gallery</span></a>
         </li>
         <li style="--i:5;">
             <a class="menu_a a5" href="#contact"><span class="material-symbols-outlined">phone_in_talk</span><span class="menu-text">contact</span></a>
@@ -134,20 +158,20 @@
         </div>
 
         <div class="card">
-            <div class="front"><span><img class="img" src="/img/img_creative/876.png"></span></div>
+            <div class="front"><span><img class="img" src="/static/img/img_creative/876.png"></span></div>
             <div class="back">
                 <span>
                     <h1>Image videos</h1>
                     <h2>(Starts from 30$)</h2>
                     <ion-icon class="arrow-static" name="chevron-down-outline"></ion-icon>
                     <p>Click Me</p>
-                    <a href="https://www.artstation.com/artwork/WmDb4J"><ion-icon class="icons" name="bag-remove-outline"></a>
+                    <a href="https://www.artstation.com/artwork/WmDb4J"><ion-icon class="icons" name="bag-remove-outline"></ion-icon></a>
                 </span>
             </div>
         </div>
 
         <div class="card">
-            <div class="front"><span><img class="img" src="/img/img_creative/567.png"></span></div>
+            <div class="front"><span><img class="img" src="/static/img/img_creative/567.png"></span></div>
             <div class="back">
                 <span>
                     <h1>YouTube Management</h1>
@@ -160,7 +184,7 @@
         </div>
 
         <div class="card">
-            <div class="front"><span><img class="img" src="/img/img_creative/877.png"></span></div>
+            <div class="front"><span><img class="img" src="/static/img/img_creative/877.png"></span></div>
             <div class="back">
                 <span>
                     <h1>Personal branding</h1>
@@ -173,7 +197,7 @@
         </div>
 
         <div class="card">
-            <div class="front"><span><img class="img" src="/img/img_creative/A2323.png"></span></div>
+            <div class="front"><span><img class="img" src="/static/img/img_creative/A2323.png"></span></div>
             <div class="back">
                 <span>
                     <h1>Instagram Stories</h1>
@@ -186,7 +210,7 @@
         </div>
 
         <div class="card">
-            <div class="front"><span><img class="img" src="/img/img_creative/animated-adv.png"></span></div>
+            <div class="front"><span><img class="img" src="/static/img/img_creative/animated-adv.png"></span></div>
             <div class="back">
                 <span>
                     <h1>Animated Advertising</h1>
@@ -199,7 +223,7 @@
         </div>
 
         <div class="card">
-            <div class="front"><span><img class="img" src="/img/img_creative/75777777.png"></span></div>
+            <div class="front"><span><img class="img" src="/static/img/img_creative/75777777.png"></span></div>
             <div class="back">
                 <span>
                     <h1>Video Editing</h1>
@@ -428,15 +452,20 @@
                     <div class="contact-box">
                         <div class="left"></div>
                         <div class="right">
-                            <h2>Order</h2>
+                            <h2>Fill out the form and our manager will contact you!</h2>
                             <input type="text" class="field" name="email" placeholder="Email">
-                            <input type="text" class="field" name="about_project" placeholder="Tell us more about your product/products. Features, characteristics and advantages">
-                            <input type="text" class="field" name="auditory" placeholder="Who is your audience? (Pains, sex, age, interests and hobbies)">
-                            <input type="text" class="field" name="creative" placeholder="Wishes and recommendations regarding creative design">
-                            <input type="text" class="field" name="advertising" placeholder="Have you had experience with advertising campaigns? Tell us a little about him :)">
-                            <input type="text" class="field" name="site" placeholder="Site (if exists)">
-                            <textarea placeholder="Links to social networks" name="social" class="field"></textarea>
-                            <button class="btn">Send</button>
+                            <div class="select-costom">
+                                <select name="select">
+                                    <option class="maruqee" value="0"><marquee behavior="scroll" direction="left">How to contact you more conveniently</marquee></option>
+                                    <option value="telegram">Telegram</option>
+                                    <option value="viber">Viber</option>
+                                    <option value="number">Number</option>
+                                </select>
+                            </div>
+                            <input type="text" class="field" name="telephone" placeholder="Your phone number">
+                            <input type="text" class="field" name="your_name" placeholder="Your name">
+                            <textarea placeholder="Brief description" name="short_description" class="field"></textarea>
+                            <button class="btn">SEND</button>
                         </div>
                     </div>
                 </div>

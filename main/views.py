@@ -19,22 +19,19 @@ def main_ukr(requset):
 def send_adv_mail(request):
     if request.method == "POST":
         adv_request = AdvertisingRequest()
-        adv_request.about_project = request.POST.get("about_project")
-        adv_request.advertising = request.POST.get("advertising")
         adv_request.email = request.POST.get("email")
-        adv_request.auditory = request.POST.get("auditory")
-        adv_request.creative = request.POST.get("creative")
-        adv_request.site = request.POST.get("site")
-        adv_request.social = request.POST.get("social")
+        adv_request.telephone = request.POST.get("telephone")
+        adv_request.your_name = request.POST.get("your_name")
+        adv_request.select = request.POST.get("select")
+        adv_request.short_description = request.POST.get("short_description")
         adv_request.save()
         telegram_settings = settings.TELEGRAM
 
         text = "***Client Email:*** " + adv_request.email + "\n ***About Client Project:*** " \
-               + adv_request.about_project + "\n" + "***Client Audience:*** " \
-               + adv_request.auditory + "\n" + "***Client Advertising Examples:*** " \
-               + adv_request.advertising + "\n" + "***What the client want:*** " \
-               + adv_request.creative + "\n" + "***Client site and social networks***" \
-               + adv_request.site + "\n" + adv_request.social
+               + adv_request.short_description + "\n" + "***Client Short Description:*** " \
+               + adv_request.telephone + "\n" + "***Client Telephone***" \
+               + adv_request.select + "\n" + "***Client Social networks***" \
+               + adv_request.your_name + "\n" + "***Client Name***" \
 
         bot = telegram.Bot(token=telegram_settings['bot_token'])
         bot.send_message(chat_id="@%s" % telegram_settings['channel_name'], text=text)
